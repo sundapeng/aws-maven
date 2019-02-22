@@ -1,4 +1,6 @@
 # AWS Maven Wagon
+##NOTE: THIS PROJECT IS NOT SUPPORTED ANYMORE!!!
+
 [![GitHub version](https://badge.fury.io/gh/platform-team%2Faws-maven.svg)](http://badge.fury.io/gh/platform-team%2Faws-maven)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
