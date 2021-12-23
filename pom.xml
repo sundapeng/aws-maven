@@ -4,15 +4,15 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.platform-team</groupId>
-    <artifactId>aws-maven</artifactId>
+    <groupId>me.sundp</groupId>
+    <artifactId>oss-maven</artifactId>
     <packaging>jar</packaging>
-    <version>6.0.0</version>
-    <name>Amazon Web Services S3 Maven Wagon Support</name>
-    <description>Standard Maven wagon support for s3:// urls</description>
+    <version>7.0.0</version>
+    <name>Object Protocol Maven Wagon Support</name>
+    <description>Standard Maven wagon support for oss:// urls</description>
 
     <properties>
-        <amazonaws.version>1.11.276</amazonaws.version>
+        <amazonaws.version>1.12.70</amazonaws.version>
         <wagon.version>3.0.0</wagon.version>
 
         <slf4j.version>1.7.25</slf4j.version>
@@ -145,7 +145,6 @@
             </plugin>
 
             <!-- Publish to Maven Central -->
-            <!--
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
@@ -197,14 +196,9 @@
                     </execution>
                 </executions>
             </plugin>
-            -->
         </plugins>
 
     </build>
-
-    <url>https://github.com/platform-team/aws-maven</url>
-
-    <inceptionYear>2018</inceptionYear>
 
     <licenses>
         <license>
@@ -214,58 +208,4 @@
         </license>
     </licenses>
 
-    <scm>
-        <connection>scm:git:git@github.com:platform-team/aws-maven.git</connection>
-        <url>https://github.com/platform-team/aws-maven</url>
-    </scm>
-
-    <organization>
-        <name>Platform Team</name>
-        <url>https://platform.team</url>
-    </organization>
-
-    <ciManagement>
-        <system>Travis CI</system>
-        <url>https://travis-ci.org/platform-team/aws-maven</url>
-    </ciManagement>
-
-    <issueManagement>
-        <system>Github</system>
-        <url>https://github.com/platform-team/aws-maven/issues</url>
-    </issueManagement>
-
-    <developers>
-        <developer>
-            <id>moleksyuk</id>
-            <name>Mykhailo Oleksiuk</name>
-            <email>mykhailo.oleksiuk@gmail.com</email>
-        </developer>
-    </developers>
-
-    <!-- Publish to Maven Central -->
-    <!--
-    <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-    </distributionManagement>
-
-    <profiles>
-        <profile>
-            <id>ossrh</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <gpg.executable>gpg</gpg.executable>
-                <gpg.passphrase></gpg.passphrase>
-            </properties>
-        </profile>
-    </profiles>
-    -->
 </project>

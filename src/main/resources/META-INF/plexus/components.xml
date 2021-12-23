@@ -2,8 +2,8 @@
     <components>
         <component>
             <role>org.apache.maven.wagon.Wagon</role>
-            <role-hint>s3</role-hint>
-            <implementation>com.github.platform.team.plugin.AmazonS3Wagon</implementation>
+            <role-hint>oss</role-hint>
+            <implementation>com.aliyun.jindodata.plugin.oss.OssWagon</implementation>
             <instantiation-strategy>per-lookup</instantiation-strategy>
         </component>
     </components>
